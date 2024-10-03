@@ -13,7 +13,7 @@ def prime(n):
 def prime(m):
     result=True
     for i in range(2,m):
-        if(m%2)==0:
+        if(m%i)==0:
             result=False
             break
     return result
