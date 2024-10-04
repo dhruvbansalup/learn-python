@@ -35,3 +35,18 @@ end_time = time.perf_counter()  # Record the end time
 print(result)  # Print the result of the search
 b_time=end_time - start_time
 print(f"Binary_search takes: {b_time} seconds")  # Print the time taken
+
+
+
+#Binary Search M-2  |   Complexity O(log n)
+def binary_search(v,l):
+    if l==[]:
+        return(False)
+    m=len(l)//2
+    if v==l[m]:
+        return True
+    if v<l[m]:
+        return(binary_search(v,l[:m]))
+    else:
+        return(binary_search(v,l[m+1:]))
+
