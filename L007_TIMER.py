@@ -50,11 +50,16 @@ class Timer:
     
 
 
-t=Timer()
-for j in range(4,9):
-    t.start()
-    n=0
-    for i in range(10**j):
-        n=n+i
-    t.stop()
-    print(j,t,sep=": ")
+def main():
+    t=Timer()
+    for j in range(4,9):
+        t.start()
+        n=0
+        for i in range(10**j):
+            n=n+i
+        t.stop()
+        print(j,t,sep=": ")
+
+
+if (__name__=="__main__"):
+    main()
