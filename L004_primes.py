@@ -21,12 +21,11 @@ def prime(m):
 import math
 def prime(n):
     result,i=True,2
-    while(result and (i<math.sqrt(n))):
+    while(result and (i<=math.sqrt(n))):
         if n%i ==0:
             result=False
         i=i+1
     return result
-
 
 
 
